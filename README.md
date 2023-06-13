@@ -27,3 +27,6 @@ kts. https://www.w3schools.com/cs/cs_access_modifiers.php
 -private
 -protected
 -internal
+
+##Luokkadiagrammi
+<img src="InheritanceExample/ClassDiagram1.png">
