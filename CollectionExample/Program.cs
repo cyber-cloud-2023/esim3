@@ -9,6 +9,7 @@ personCollection.Add(new Person("Teppo", "Testi"));
 personCollection.Add(new Person("Liisa", "Joki"));
 personCollection.Add(new Person("Aino", "Virta"));
 personCollection.Add(new Person("Matti", "Metsä"));
+personCollection.Add(new Person("Matti", "Virta"));
 
 Console.WriteLine("Listassa on "+ personCollection.Count + " henkilöä");
 Console.WriteLine("Ensimmäisen etunimi="+personCollection[0].Fname);
@@ -21,4 +22,14 @@ Console.WriteLine("foreach silmukalla nimet");
 foreach(Person onePerson in personCollection)
 {
     Console.WriteLine(onePerson.Fname+ " "+onePerson.Lname);
+}
+var virtaCollection = from selected in personCollection
+                          //where selected.Lname=="Virta"
+                            where selected.Lname.Equals("Virta")
+                    select selected;
+Console.WriteLine();
+Console.WriteLine("Virta nimiset");
+foreach (var item in virtaCollection)
+{
+    Console.WriteLine(item.Fname + " " + item.Lname);
 }
