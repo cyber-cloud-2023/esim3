@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfExample.BookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExample"
+        mc:Ignorable="d"
+        Title="BookWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="tbInfo" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" FontSize="22"/>
+        <Button Name="btnShowBooks" Grid.Column="1" Content="Näytä kirjat" Grid.Row="3" Click="btnShowBooks_Click"/>
+        <DataGrid Name="gridBooks" Grid.Column="1" Grid.Row="5" CanUserAddRows="False" />
+
+    </Grid>
+</Window>
