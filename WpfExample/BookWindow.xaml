@@ -23,7 +23,7 @@
         </Grid.RowDefinitions>
         <TextBlock Name="tbInfo" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" FontSize="22"/>
         <Button Name="btnShowBooks" Grid.Column="1" Content="Näytä kirjat" Grid.Row="3" Click="btnShowBooks_Click"/>
-        <DataGrid Name="gridBooks" Grid.Column="1" Grid.Row="5" CanUserAddRows="False" />
+        <DataGrid Name="gridBooks" ColumnWidth="*" Grid.Column="1" Grid.Row="5" CanUserAddRows="False" />
 
     </Grid>
 </Window>
