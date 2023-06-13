@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fAxixenb6X/FpCz4NSzGNeU9chwvIK0XFZo2sP3NdzEC0xKJ/uP3yClM7rzmlK8AcqPVtNOAENOCGUIWycOqTw==",
+  "success": true,
+  "projectFilePath": "C:\\codes\\cyber_cloud\\esim3\\WpfBookClient\\WpfBookClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pekka\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
